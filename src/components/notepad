@@ -1,0 +1,6 @@
+<Router className='tab-container'>
+  <Route className='tabs' path={"test"} component={test} Home />
+  <Route className='tabs' path={"test"} component={test} Team />
+  <Route className='tabs' path={"test"} component={test} Projects />
+  <Route className='tabs' path={"test"} component={test} Contact Us />
+</Router>
