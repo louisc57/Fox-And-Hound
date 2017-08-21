@@ -1,16 +1,102 @@
-.Parent{
-  width: 500px;
-  height: auto;
-  background-color: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+img{
+  max-width: 100%;
+  max-height: 100%
 }
 
-.child{
-  width: 100px;
-  height: 100px;
-  background-color: red
+@font-face {
+    font-family: 'Simple'; /*a name to be used later*/
+    src: url('../custom/Simplifica_Sans.ttf'); /*URL to font*/
+}
+
+.main{
+  width: 100%;
+  height: auto;
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame{
+  width: 900px;
+  height: 568px;
+  background-image: url('../images/Contact/frame.png');
+  background-size: cover;
+  display: flex;
+  margin-right: 100px
+}
+
+.box1{
+  width: 374px;
+  height: 514px;
+  margin-left: 143px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact{
+  font-family: 'Simple';
+  font-size: 60px;
+  height: auto;
+  color: #FF7F50;
+  border-bottom: 1px solid #D31F35;
+  margin-bottom: 40px;
+  margin-top: 100px
+}
+
+.updates{
+  font-family: 'Simple';
+  font-size: 24px;
+  color: #6D6E71;
+  margin-bottom: 10px
+}
+
+.list{
+  width: 180px;
+  height: 125px;
+  display: block;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  margin:5px
+}
+
+.box2{
+  width: 385px;
+  height: 514px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.email{
+  width: 270px;
+  height: auto;
+  font-size: 36px;
+  font-family: 'Simple';
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 8px
+}
+
+.orange{
+  margin-left: 10px
+}
+.emblem{
+  height: 35px;
+  margin-left: 31px
+}
+
+.sample{
+  width: 270px;
+  height: auto;
+  font-family: 'Simple';
+  font-size: 24px;
+  color: #D31F35;
+  border-bottom: 1px solid #D31F35;
+  padding-bottom: 25px;
 }

@@ -3,37 +3,6 @@
     src: url('../custom/Simplifica_Sans.ttf'); /*URL to font*/
 }
 
-.header{
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  display: flex;
-  align-items: center;
-
-}
-
-.tabs{
-  width: 200px;
-  min-width: 100px;
-  height: 125px;
-  display: flex;
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  border: 1px;
-  font-family: 'Simple'
-}
-
-.logo-container{
-  width: 100px;
-  height: 100px;
-  /*H&W changes logo size*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 img{
   max-width: 100%;
   max-height: 100%;
@@ -54,6 +23,7 @@ img{
   height: 94px;
   display: flex;
   background-color: white;
+  margin-top: 50px;
   margin-bottom: 100px
 }
 
@@ -92,6 +62,7 @@ img{
     font-family: 'Simple';
     min-width: 230px;
     padding: 0px 20px 0px 0px;
+    border-right: 1px solid black;
 }
 
 .header1{
@@ -126,17 +97,89 @@ img{
 }
 .team-text{
   font-family: 'Simple';
-  max-width: 650px;
+  max-width: 684px;
   padding-left: 20px;
-  border-left: 1px solid black
 }
 
-.alex-box{
-  width: 200px;
-  height: 200px
+.box{
+  width: 1000px;
+  height: 350px;
+  display: flex;
 }
 
-.dawon-box{
-  width: 200px;
-  height: 200px
+.logo{
+  width: 275px;
+  height: 275px;
+}
+
+.detail{
+  width: 650px;
+  height: 300px;
+  /*background-color: blue;*/
+  margin-left: 50px
+}
+
+.title{
+  width: 100%;
+  height: 40px;
+  display: flex
+}
+
+.name{
+  font-family: 'Simple';
+  font-size: 45px;
+  height: 40px;
+  width: auto;
+}
+
+.alex-line{
+  width: 485px;
+  height: 40px;
+  margin-left: 20px;
+  border-bottom: 1px solid black
+}
+
+.creator{
+  margin-top: 5px;
+  font-family: 'Simple';
+  color: #FF7F50;
+  font-size: 25px;
+}
+
+.description{
+    width: 450px;
+    height: auto;
+    font-family: 'Simple';
+    font-size: 20px;
+    margin-right: 0
+}
+
+.christian-line{
+    width: 388px;
+    height: 40px;
+    margin-right: 20px;
+    border-bottom: 1px solid black
+}
+
+.right-detail{
+  width: 650px;
+  height: 300px;
+  /*background-color: blue;*/
+  margin-right: 50px;
+  text-align: right;
+}
+
+.right-description{
+  width: 450px;
+  height: auto;
+  font-family: 'Simple';
+  font-size: 20px;
+  margin: 0 0 0 auto;
+}
+
+.dawon-line{
+  width: 485px;
+  height: 40px;
+  margin-left: 20px;
+  border-bottom: 1px solid black
 }

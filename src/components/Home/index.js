@@ -1,25 +1,13 @@
 import React, { PropTypes } from 'react';
-import TeamPage from '../TeamPage';
+import { Switch, Route } from 'react-router-dom';
 import stripes from '../images/stripes.png';
 import foxandhound from '../images/foxandhound.png';
-import logo from '../images/logo_placerholder.png';
-import './main.css'
+import './home.css'
 
 class main extends React.Component {
   render () {
     return(
       <div>
-        <div className='header'>
-          <div className='tabs'>
-            <div className='logo-container'>
-              <img className='header-logo' src={logo}/>
-            </div>
-          </div>
-          <div className='tabs' >Home </div>
-          <div className='tabs' >Team</div>
-          <div className='tabs' >Projects</div>
-          <div className='tabs' >Contact Us</div>
-        </div>
         <div className='main-container'>
           <div className='logo-box'><img className='main-logo' src={foxandhound}/></div>
           <div className='slogan-box'>

@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import MainPage from './components/MainPage';
-import TeamPage from './components/TeamPage';
-import Contact from './components/Contact';
+import { BrowserRouter } from 'react-router-dom';
+import Header from './components/Header';
+import Main from './components/Main.js';
 
-
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <TeamPage/>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div>
+    <Header />
+    <Main />
+  </div>
+)
 
 export default App;
