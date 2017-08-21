@@ -33,9 +33,9 @@ class Contact extends React.Component {
               <div className='orange'> EMAIL</div>
               <img className='emblem' src={email}/>
             </div>
-            <div className='sample'>
-              foxandhoundstudios.cya@gmail.com
-            </div>
+            <div className='sample'>foxandhoundstudios.cya@gmail.com</div>
+            <div className='thoughts'>Let us<span className='orange2'> know your thoughts</span></div>
+
           </div>
         </div>
       </div>
