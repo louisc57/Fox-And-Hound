@@ -12,6 +12,36 @@ import youtube from '../images/Contact/youtube.png';
 
 
 class Contact extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state={
+      email: '',
+      subject: '',
+      message: ''
+    };
+
+
+  }
+
+  updateName (evt){
+    this.setState({
+      name: evt.target.value
+    })
+  }
+
+  handleEmail(){
+
+  }
+
+  handleMessage(){
+
+  }
+
+  handleSubmit(){
+    alert('Testing Submit button and name ' + this.state.name);
+  }
+
   render () {
     return(
       <div className='main'>
@@ -35,6 +65,30 @@ class Contact extends React.Component {
             </div>
             <div className='sample'>foxandhoundstudios.cya@gmail.com</div>
             <div className='thoughts'>Let us<span className='orange2'> know your thoughts</span></div>
+            <input
+              type="text"
+              name="email"
+              placeholder='Email'
+              className='email-email'
+              value={this.state.email}/>
+            <input
+              type="text"
+              name="subject"
+              placeholder='Subject'
+              className='email-subject'
+              value={this.state.subject}/>
+            <input
+              type="text"
+              name="message"
+              placeholder='Message'
+              className='email-message'
+              value={this.state.message}/>
+            <button
+              type="submit"
+              value="Submit"
+              className='email-submit'
+              />
+
 
           </div>
         </div>

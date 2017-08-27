@@ -8,62 +8,73 @@ img{
   max-height: 100%;
 }
 
-.main-container{
-  width: 100%;
-  height: 650px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*background-color: blue*/
+@media all and (min-width: 416px){
+  .mobile-main-container{
+    display: none
+  }
+  .main-container{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: blue*/
+  }
+
+  .logo-box{
+    width: 33%;
+    height: 510px;
+    position: relative;
+    max-width: 350px;
+    /*background-color: red*/
+  }
+
+  .main-logo{
+    position: absolute;
+    bottom: 0;
+    margin-left: 125px
+  }
+
+  .slogan-box{
+    width: 34%;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*background-color: red*/
+  }
+
+  .slogan1{
+    font-size: 50px;
+    text-align: right;
+    font-family: 'Simple'
+  }
+  .orange{
+    color: #FF7F50
+  }
+  .slogan2{
+    font-size: 35px;
+    text-align: right;
+    font-family: 'Simple'
+  }
+
+  .stripes-box{
+    width: 33%;
+    max-width: 325px;
+    height: 650px;
+
+    /*background-color: red*/
+  }
+
+  .main-stripes{
+    float: right
+  }
 }
 
-.logo-box{
-  width: 33%;
-  height: 510px;
-  position: relative;
-  max-width: 350px;
-  /*background-color: red*/
-}
-
-.main-logo{
-  position: absolute;
-  bottom: 0;
-  margin-left: 125px
-}
-
-.slogan-box{
-  width: 34%;
-  height: 510px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  /*background-color: red*/
-}
-
-.slogan1{
-  font-size: 50px;
-  text-align: right;
-  font-family: 'Simple'
-}
-.orange{
-  color: #FF7F50
-}
-.slogan2{
-  font-size: 35px;
-  text-align: right;
-  font-family: 'Simple'
-}
-
-.stripes-box{
-  width: 33%;
-  max-width: 325px;
-  height: 650px;
-
-  /*background-color: red*/
-}
-
-.main-stripes{
-  float: right
+@media all and (max-width: 415px){
+  .main-container{
+    display: none;
+  }
 }

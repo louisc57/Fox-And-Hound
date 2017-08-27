@@ -18,6 +18,9 @@ class main extends React.Component {
           </div>
           <div className='stripes-box'><img className='main-stripes' src={stripes}/></div>
         </div>
+        <div className='mobile-main-container'>
+          Hi I am main
+        </div>
       </div>
     )
   }
