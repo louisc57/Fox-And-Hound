@@ -63,7 +63,7 @@ img{
     position: absolute;
     margin-left: 65px;
     margin-top: -20px;
-    min-height: 100px;
+    min-height: 53px;
     height: auto;
     min-width: 160px;
     width: auto;
@@ -77,11 +77,12 @@ img{
     align-items: center;
     text-decoration: none;
     font-size: 25px;
+    margin-top: 5px
   }
   .dropdown-content b{
     width: 10px;
     height: 10px;
-    background-color: black
+    background-color: red
   }
   .dropdown-li{
     width: 10px;
@@ -92,8 +93,11 @@ img{
   .dropdown:hover .dropdown-content{
     display: block
   }
+  .dropdown-entry{
+  }
   .selected-bloody{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid red;
+
     .header{
       background-color: black
     }

@@ -107,7 +107,9 @@ img{
     font-family: 'Simple';
     max-width: 684px;
     padding-left: 20px;
-    font-size: 18px
+    font-size: 19px;
+    display: flex;
+    align-items: center;
   }
 
   .box{
