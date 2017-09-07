@@ -2,6 +2,8 @@ import React, { PropTypes } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import stripes from '../images/stripes.png';
 import foxandhound from '../images/foxandhound.png';
+import mobilestripes from '../images/mobile-stripes.png';
+import animals from '../images/animals.png';
 import './home.css'
 
 class main extends React.Component {
@@ -19,8 +21,12 @@ class main extends React.Component {
           <div className='stripes-box'><img className='main-stripes' src={stripes}/></div>
         </div>
         <div className='mobile-main-container'>
-          Hi I am main
+          <div className='slogan1'>WE ARE <span className='orange'>FOX AND HOUND STUDIOS</span></div>
+          <div className='slogan2'>CREATIVITY CONTENT CREATOR</div>
+          <div className='mbackground'><img className='mobile-logo' src={animals}/></div>
         </div>
+
+
       </div>
     )
   }

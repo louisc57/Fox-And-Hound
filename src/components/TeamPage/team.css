@@ -7,179 +7,308 @@ img{
   max-width: 100%;
   max-height: 100%;
 }
-
-.team-container{
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /*background-color: blue*/
-}
-
-.team-box{
-  width: 1000px;
-  height: 94px;
-  display: flex;
-  background-color: white;
-  margin-top: 50px;
-  margin-bottom: 100px
-}
-
-.color{
-    min-width: 44px;
-    min-height: 80px;
-    max-width: 45px;
-    min-height: 81px;
+@media all and (min-width: 416px){
+  .mobile-team-container{
+    display: none
+  }
+  .team-container{
+    width: 100%;
+    height: auto;
     display: flex;
-}
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*background-color: blue*/
+  }
 
-.triangle{
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid brown;
-  border-left: 10px solid transparent;
-  border-right: 10px solid brown
-}
+  .team-box{
+    width: 1000px;
+    height: 94px;
+    display: flex;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 100px
+  }
 
-.rectangle{
-  width: 20px;
-  height: 60px;
-  background-color: brown;
+  .color{
+      min-width: 44px;
+      min-height: 80px;
+      max-width: 45px;
+      min-height: 81px;
+      display: flex;
+  }
 
-}
+  .triangle{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid brown;
+    border-left: 10px solid transparent;
+    border-right: 10px solid brown
+  }
 
-.orange-box{
-  width: 24px;
-  height: 80px;
-  background-color: #FF7F50
-}
+  .rectangle{
+    width: 20px;
+    height: 60px;
+    background-color: brown;
+
+  }
+
+  .orange-box{
+    width: 24px;
+    height: 80px;
+    background-color: #FF7F50
+  }
 
 
-.team-header{
+  .team-header{
+      font-family: 'Simple';
+      width: 230px;
+      padding: 0px 20px 0px 0px;
+      text-align: right;
+      border-right: 1px solid black;
+  }
+
+  .header1{
+    width: auto;
+    text-align: right;
+    font-size: 45px;
+    height: 40px;
+    padding-bottom: 10px;
+  }
+
+  .orange-team{
+    color: #FF7F50
+  }
+  .adjuster{
+    display: flex;
+    max-width: 230px
+  }
+
+  .line1{
+    width: 40px;
+    /*height: 10px;*/
+    /*border-top: 1px solid red*/
+  }
+
+  .line2{
+    width: 190px;
+    /*height: 10px;*/
+    margin: 0px;
+    border-top: 1px solid black;
+    /*border-bottom: 1px solid blue;*/
+  }
+  .header2{
+    text-align: right;
+    font-size: 25px;
+    padding-top: 10px
+  }
+  .team-text{
     font-family: 'Simple';
-    min-width: 230px;
-    padding: 0px 20px 0px 0px;
-    border-right: 1px solid black;
-}
+    max-width: 684px;
+    padding-left: 20px;
+    font-size: 18px
+  }
 
-.header1{
-  text-align: right;
-  font-size: 45px;
-  height: 40px;
-  padding-bottom: 10px
-}
+  .box{
+    width: 1000px;
+    height: 350px;
+    display: flex;
+  }
 
-.adjuster{
-  display: flex;
-  max-width: 230px
-}
+  .logo{
+    width: 275px;
+    height: 275px;
+  }
 
-.line1{
-  width: 40px;
-  /*height: 10px;*/
-  /*border-top: 1px solid red*/
-}
+  .detail{
+    width: 650px;
+    height: 300px;
+    /*background-color: blue;*/
+    margin-left: 50px
+  }
 
-.line2{
-  width: 190px;
-  /*height: 10px;*/
-  margin: 0px;
-  border-top: 1px solid black;
-  /*border-bottom: 1px solid blue;*/
-}
-.header2{
-  text-align: right;
-  font-size: 25px;
-  padding-top: 10px
-}
-.team-text{
-  font-family: 'Simple';
-  max-width: 684px;
-  padding-left: 20px;
-}
+  .title{
+    width: 100%;
+    height: 40px;
+    display: flex
+  }
 
-.box{
-  width: 1000px;
-  height: 350px;
-  display: flex;
-}
+  .name{
+    font-family: 'Simple';
+    font-size: 45px;
+    height: 40px;
+    width: auto;
+  }
 
-.logo{
-  width: 275px;
-  height: 275px;
-}
+  .alex-line{
+    width: 485px;
+    height: 40px;
+    margin-left: 20px;
+    border-bottom: 1px solid black
+  }
 
-.detail{
-  width: 650px;
-  height: 300px;
-  /*background-color: blue;*/
-  margin-left: 50px
-}
+  .creator{
+    margin-top: 5px;
+    font-family: 'Simple';
+    color: #FF7F50;
+    font-size: 25px;
+  }
 
-.title{
-  width: 100%;
-  height: 40px;
-  display: flex
-}
+  .description{
+      width: 450px;
+      height: auto;
+      font-family: 'Simple';
+      font-size: 20px;
+      margin-right: 0
+  }
 
-.name{
-  font-family: 'Simple';
-  font-size: 45px;
-  height: 40px;
-  width: auto;
-}
+  .christian-line{
+      width: 388px;
+      height: 40px;
+      margin-right: 20px;
+      border-bottom: 1px solid black
+  }
 
-.alex-line{
-  width: 485px;
-  height: 40px;
-  margin-left: 20px;
-  border-bottom: 1px solid black
-}
+  .right-detail{
+    width: 650px;
+    height: 300px;
+    /*background-color: blue;*/
+    margin-right: 50px;
+    text-align: right;
+  }
 
-.creator{
-  margin-top: 5px;
-  font-family: 'Simple';
-  color: #FF7F50;
-  font-size: 25px;
-}
-
-.description{
+  .right-description{
     width: 450px;
     height: auto;
     font-family: 'Simple';
-    font-size: 20px;
-    margin-right: 0
-}
+    font-size: 21px;
+    margin: 0 0 0 auto;
+  }
 
-.christian-line{
-    width: 388px;
+  .dawon-line{
+    width: 485px;
     height: 40px;
-    margin-right: 20px;
+    margin-left: 20px;
     border-bottom: 1px solid black
+  }
 }
 
-.right-detail{
-  width: 650px;
-  height: 300px;
-  /*background-color: blue;*/
-  margin-right: 50px;
-  text-align: right;
-}
+@media all and (max-width: 415px){
+  .team-container{
+    display: none
+  }
+  .mobile-team-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .intro{
+    display: flex;
+    margin-bottom: 20px
+  }
+  .shape{
+    width: 70px;
+    height: 70px;
+    margin-right: -10px
+  }
+  .intro2{
+    width: auto;
+    height: 75px;
+  }
+  .meet{
+    width: 147px;
+    font-family: 'Simple';
+    font-size: 35px;
+    border-bottom: 1px solid black
+  }
 
-.right-description{
-  width: 450px;
-  height: auto;
-  font-family: 'Simple';
-  font-size: 20px;
-  margin: 0 0 0 auto;
-}
+  .description-box{
+    width: 350px;
+    height: auto;
+    font-family: 'Simple';
+    font-size: 17px;
+    margin-bottom: 50px
+  }
+  .box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 50px
+  }
+  .logo{
+    width: 175px;
+    margin-right: 20px
+  }
+  .detail{
+    width: 219px
+  }
+  .title{
+    display: flex;
+    align-items: center;
+  }
+  .name{
+    font-family: 'Simple';
+    font-size: 35px
 
-.dawon-line{
-  width: 485px;
-  height: 40px;
-  margin-left: 20px;
-  border-bottom: 1px solid black
+  }
+  .alex-line{
+    width: 90px;
+    height: 1px;
+    border-bottom: 1px solid black;
+    margin-left: 20px
+  }
+  .creator{
+    font-family: 'Simple';
+    color: #FF7F50;
+    font-size: 20px;
+    margin-bottom: 20px
+  }
+  .description{
+    font-family: 'Simple';
+    font-size: 18px;
+    width: 170px
+  }
+  .dawon-line{
+    width: 89px;
+    height: 1px;
+    border-bottom: 1px solid black;
+    margin-left: 20px
+  }
+  .chris-logo{
+    width: 175px;
+    margin-left: 20px
+  }
+  .right-description{
+    font-family: 'Simple';
+    font-size: 18px;
+    width: 170px;
+    margin: 0 0 0 auto
+  }
+  .christian-line{
+    width: 20px;
+    height: 1px;
+    border-bottom: 1px solid black;
+    margin-right: 10px
+  }
+
+  .right-detail{
+    text-align: right;
+  }
+  .friendly-bar{
+    width: 100%;
+    height: 25px;
+    background-color: #7BBABA
+  }
+  .adventure-bar{
+    width: 100%;
+    height: 50px;
+    background-color: #700D2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

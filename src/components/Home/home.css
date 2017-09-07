@@ -77,4 +77,35 @@ img{
   .main-container{
     display: none;
   }
+  .mobile-main-container{
+    width: 100%;
+    height: 100%
+  }
+  .slogan1{
+    font-size: 40px;
+    margin-top: 90px;
+    text-align: right;
+    font-family: 'Simple';
+  }
+  .orange{
+    color: #FF7F50
+  }
+  .slogan2{
+    font-size: 30px;
+    text-align: right;
+    font-family: 'Simple';
+    margin-bottom: 120px
+  }
+  .mbackground{
+    width: 100%;
+    height: 200px;
+    background-image: url('../images/mobile-stripes.png');
+    background-size: cover
+  }
+  .mobile-logo{
+    width: 275px;
+    height: 148px;
+    margin-left: 100px;
+    margin-top: 10px
+  }
 }

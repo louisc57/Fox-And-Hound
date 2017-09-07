@@ -37,13 +37,19 @@ class Header extends React.Component {
           </div>
           <li className='tabs'><NavLink to='/' exact={true} className='style' activeClassName='selected'>Home</NavLink></li>
           <li className='tabs'><NavLink to='/team' className='style' activeClassName='selected'>Team</NavLink></li>
-          <div className='tabs hover'  onMouseEnter={this.mouseOver} onMouseLeave={this.mouseLeaves}>
-            Projects
-            <p className='overlay' ref="overlay">
-              <div className='games'>
-
+          <div className='dropdown'>
+            <div className='tabs' >Projects</div>
+            <div className='dropdown-content'>
+              <div>
+                <a>
+                  <div className='dropdown-li'>
+                  </div>
+                  <NavLink to='/projects/bloodymary' exact={true} activeClassName='selected-bloody' className='dropdown-entry'>
+                    Bloody Mary
+                  </NavLink>
+                </a>
               </div>
-            </p>
+            </div>
           </div>
           <li className='tabs'><NavLink to='/contact' className='style' activeClassName='selected'>Contact Us</NavLink></li>
         </div>

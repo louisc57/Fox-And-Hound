@@ -1,0 +1,14 @@
+.bloody-main{
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1{
+  color: red;
+  font-size: 36px
+}
