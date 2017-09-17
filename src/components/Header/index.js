@@ -1,6 +1,8 @@
 import React, { PropTypes } from 'react'
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+import { findDOMNode } from 'react-dom';
+import $ from 'jquery';
 import logo from '../images/foxandhound-logo.png';
 import './header.css';
 
@@ -38,7 +40,7 @@ class Header extends React.Component {
           <li className='tabs'><NavLink to='/' exact={true} className='style' activeClassName='selected'>Home</NavLink></li>
           <li className='tabs'><NavLink to='/team' className='style' activeClassName='selected'>Team</NavLink></li>
           <div className='dropdown'>
-            <div className='tabs' >Projects</div>
+            <div className='tabs'><NavLink to='/projects/' class="disabled" className='style' activeClassName='selected'>Projects</NavLink></div>
             <div className='dropdown-content'>
               <div>
                 <a>

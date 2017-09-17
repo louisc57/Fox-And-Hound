@@ -1,6 +1,9 @@
-<Router className='tab-container'>
-  <Route className='tabs' path={"test"} component={test} Home />
-  <Route className='tabs' path={"test"} component={test} Team />
-  <Route className='tabs' path={"test"} component={test} Projects />
-  <Route className='tabs' path={"test"} component={test} Contact Us />
-</Router>
+To do's:
+
+1. Nest a dead projects tab
+2. Get Contact us working and emails sent
+3. Finish bloody mary pages
+4. Get back to top button functioning
+<button onclick={{scrollTop: 100}} id="myBtn" title="Go to top">
+  <img className='scroll' src={scroll}/>
+</button>

@@ -227,19 +227,30 @@ img{
     font-size: 35px;
     border-bottom: 1px solid black
   }
-
+  .content-creator{
+    font-family: 'Simple';
+    color: #FF7F50;
+    font-size: 20px;
+    margin-top: 10px
+  }
   .description-box{
     width: 350px;
     height: auto;
     font-family: 'Simple';
     font-size: 17px;
-    margin-bottom: 50px
+    margin-bottom: 40px
   }
   .box{
     width: 100%;
     height: auto;
     display: flex;
     margin-bottom: 50px
+  }
+  .chris-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 50px;
   }
   .logo{
     width: 175px;
@@ -254,14 +265,18 @@ img{
   }
   .name{
     font-family: 'Simple';
-    font-size: 35px
-
+    font-size: 35px;
+    width: auto;
+  }
+  .chris-name{
+    font-size: 30px;
+    width: auto;
   }
   .alex-line{
-    width: 90px;
+    width: 80px;
     height: 1px;
     border-bottom: 1px solid black;
-    margin-left: 20px
+    margin-left: 5px
   }
   .creator{
     font-family: 'Simple';
@@ -275,14 +290,15 @@ img{
     width: 170px
   }
   .dawon-line{
-    width: 89px;
+    width: 80px;
     height: 1px;
     border-bottom: 1px solid black;
-    margin-left: 20px
+    margin-left: 5px
   }
   .chris-logo{
     width: 175px;
-    margin-left: 20px
+    margin-left: auto;
+    margin-right: 0px
   }
   .right-description{
     font-family: 'Simple';
@@ -291,14 +307,15 @@ img{
     margin: 0 0 0 auto
   }
   .christian-line{
-    width: 20px;
+    width: 0px;
     height: 1px;
     border-bottom: 1px solid black;
-    margin-right: 10px
+    margin-right: 5px
   }
 
   .right-detail{
     text-align: right;
+    width: auto
   }
   .friendly-bar{
     width: 100%;
@@ -312,5 +329,15 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #myBtn {
+    width: 25px;
+    height: 25px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #700D2D; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
   }
 }

@@ -1,14 +1,20 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
+import { findDOMNode } from 'react-dom';
+import $ from 'jquery';
 import './bloody.css'
 
+
+
 class BloodyM extends React.Component {
+
   render () {
     return(
       <div>
         <div className='bloody-main'>
-          <div className='section1'>
+          <a className='section1'>
             Bloody Mary
-          </div>
+          </a>
+          <button>Toggle Color</button>
           <div></div>
         </div>
 

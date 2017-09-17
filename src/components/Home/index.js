@@ -15,14 +15,14 @@ class main extends React.Component {
           <div className='slogan-box'>
             <div>
               <div className='slogan1'>WE ARE <span className='orange'>FOX AND HOUND STUDIOS</span></div>
-              <div className='slogan2'>CREATIVITY CONTENT CREATOR</div>
+              <div className='slogan2'>CREATIVE CONTENT CREATORS</div>
             </div>
           </div>
           <div className='stripes-box'><img className='main-stripes' src={stripes}/></div>
         </div>
         <div className='mobile-main-container'>
           <div className='slogan1'>WE ARE <span className='orange'>FOX AND HOUND STUDIOS</span></div>
-          <div className='slogan2'>CREATIVITY CONTENT CREATOR</div>
+          <div className='slogan2'>CREATIVE CONTENT CREATORS</div>
           <div className='mbackground'><img className='mobile-logo' src={animals}/></div>
         </div>
 

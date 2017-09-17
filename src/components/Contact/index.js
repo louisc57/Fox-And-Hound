@@ -10,39 +10,11 @@ import soundcloud from '../images/Contact/soundcloud.png';
 import twitter from '../images/Contact/twitter.png';
 import youtube from '../images/Contact/youtube.png';
 import logo from '../images/foxandhound.png';
+import pin from '../images/Contact/Contactpin.png';
 
 
 
 class Contact extends React.Component {
-
-  constructor(props){
-    super(props);
-    this.state={
-      email: '',
-      subject: '',
-      message: ''
-    };
-
-
-  }
-
-  updateName (evt){
-    this.setState({
-      name: evt.target.value
-    })
-  }
-
-  handleEmail(){
-
-  }
-
-  handleMessage(){
-
-  }
-
-  handleSubmit(){
-    alert('Testing Submit button and name ' + this.state.name);
-  }
 
   render () {
     return(
@@ -71,26 +43,23 @@ class Contact extends React.Component {
               <input
                 type="text"
                 name="email"
+                id='email'
                 placeholder='Email'
-                className='email-email'
-                value={this.state.email}/>
+                />
               <input
                 type="text"
                 name="subject"
+                id='subject'
                 placeholder='Subject'
-                className='email-subject'
-                value={this.state.subject}/>
-              <input
+                />
+              <textarea
                 type="text"
                 name="message"
+                id='message'
                 placeholder='Message'
-                className='email-message'
-                value={this.state.message}/>
-              <button
-                type="submit"
-                value="Submit"
-                className='email-submit'
+                className="email-message"
                 />
+              <input type="image" id="submit" onclick="topFunction()" src={send}/>
 
 
             </div>
@@ -101,7 +70,9 @@ class Contact extends React.Component {
 
           <div className='mobile-header'>
             <div className='mobile-header2'>
-              <div className='gps'></div>
+              <div className='gps'>
+                <img  src={pin}/>
+              </div>
               <div className='gps2'>
                 <div className='contact'>CONTACT US</div>
                 <div className='updates'>STAY TUNED FOR UPDATES</div>
@@ -120,6 +91,21 @@ class Contact extends React.Component {
             <div className='mobile-logo'>
               <img src={logo}/>
             </div>
+
+            <div className='email'>
+              <div className='emblem'>
+                <img className='emblem-2' src={email}/>
+              </div>
+              <div className='reach'>
+                <div className='outreach'>REACH US BY<div className='m-contact-orange'> EMAIL</div></div>
+                <div className='sample'>foxandhoundstudios.cya@gmail.com</div>
+              </div>
+            </div>
+
+
+
+
+
           </div>
 
           //start here
