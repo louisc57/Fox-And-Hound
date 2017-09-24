@@ -39,20 +39,22 @@ class Header extends React.Component {
           </div>
           <li className='tabs'><NavLink to='/' exact={true} className='style' activeClassName='selected'>Home</NavLink></li>
           <li className='tabs'><NavLink to='/team' className='style' activeClassName='selected'>Team</NavLink></li>
+
           <div className='dropdown'>
-            <div className='tabs'><NavLink to='/projects/' class="disabled" className='style' activeClassName='selected'>Projects</NavLink></div>
+            <div className='tabs'><NavLink to='/projects/' class="disabled" className='style projectstab' activeClassName='selected'>Projects</NavLink></div>
             <div className='dropdown-content'>
               <div>
                 <a>
                   <div className='dropdown-li'>
                   </div>
-                  <NavLink to='/projects/bloodymary' exact={true} activeClassName='selected-bloody' className='dropdown-entry'>
+                  <NavLink to='/projects/bloodymary' exact={true} activeClassName='selected' className='dropdown-entry'>
                     Bloody Mary
                   </NavLink>
                 </a>
               </div>
             </div>
           </div>
+
           <li className='tabs'><NavLink to='/contact' className='style' activeClassName='selected'>Contact Us</NavLink></li>
         </div>
 
@@ -65,7 +67,27 @@ class Header extends React.Component {
           <div className='mheader2'>
             <div className='mtabs '><NavLink to='/' exact={true} className='style' activeClassName='selected'>Home</NavLink></div>
             <div className='mtabs '><NavLink to='/team' className='style' activeClassName='selected'>Team</NavLink></div>
-            <div className='mtabs '>Projects</div>
+
+              <div className='dropdown'>
+                <div className='mtabs'>
+                  <NavLink to='/projects/' onClick='return none' class="disabled" className='style projectstab' activeClassName='selected'>
+                    <a href="javascript:void(0);" className='style'>Projects
+                    </a>
+                  </NavLink>
+                </div>
+                  <div className='dropdown-content'>
+                    <div>
+                      <a>
+                        <div className='dropdown-li'>
+                        </div>
+                        <NavLink to='/projects/bloodymary' exact={true} activeClassName='selected' className='dropdown-entry'>
+                          Bloody Mary
+                        </NavLink>
+                      </a>
+                    </div>
+                  </div>
+              </div>
+
             <div className='mtabs '><NavLink to='/contact' className='style' activeClassName='selected'>Contact Us</NavLink></div>
             <div></div>
             <div></div>

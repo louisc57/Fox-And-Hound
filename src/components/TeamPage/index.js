@@ -8,19 +8,26 @@ import './team.css';
 
 class team extends React.Component {
 
-  // <script>
-  //   $(function(){
-  //     $(".scroll").click(function(){
-  //       $("html,body").animate({
-  //         scrollTop:$(".thetop").offset().top},"1000");return false
-  //     })
-  //   });
-  // </script>
+  constructor() {
+    super();
 
-  topFunction() {
-    document.body.scrollTop = 0; // For Chrome, Safari and Opera
-    document.documentElement.scrollTop = 0; // For IE and Firefox
-}
+    this.state = {
+        intervalId: 0,
+    };
+  }
+
+  scrollStep() {
+    if (window.pageYOffset === 0) {
+        clearInterval(this.state.intervalId);
+    }
+    window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+  }
+
+  scrollToTop() {
+    let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
+    this.setState({ intervalId: intervalId });
+  }
+
   render () {
     return(
 
@@ -183,13 +190,13 @@ class team extends React.Component {
           <div className='friendly-bar'></div>
 
           <div className='adventure-bar'>
-            <input type="image" id="myBtn" onclick="topFunction()" src={scroll}/>
+            <input type="image" id="myBtn" onClick={ () => { this.scrollToTop(); }} src={scroll}/>
 
           </div>
 
         </div>
       </div>
-      
+
     )
   }
 }

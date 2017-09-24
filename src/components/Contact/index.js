@@ -11,6 +11,8 @@ import twitter from '../images/Contact/twitter.png';
 import youtube from '../images/Contact/youtube.png';
 import logo from '../images/foxandhound.png';
 import pin from '../images/Contact/Contactpin.png';
+import scroll from '../images/Contact/scrollup.png';
+
 
 
 
@@ -102,19 +104,35 @@ class Contact extends React.Component {
               </div>
             </div>
 
+            <div className='thoughts'>Let us <span className='thoughts-orange'>know your thoughts</span></div>
 
-
+            <input
+              type="text"
+              name="email"
+              id='email'
+              placeholder='Email'
+              />
+            <input
+              type="text"
+              name="subject"
+              id='subject'
+              placeholder='Subject'
+              />
+            <textarea
+              type="text"
+              name="message"
+              id='message'
+              placeholder='Message'
+              className="email-message"
+              />
+            <input type="image" id="submit" onclick="topFunction()" src={send}/>
 
 
           </div>
 
-          //start here
-
           <div className='friendly-bar'></div>
           <div className='adventure-bar'>
-            <div className='up-button'>
-
-            </div>
+            <input type="image" id="myBtn" onclick="topFunction()" src={scroll}/>
           </div>
 
         </div>

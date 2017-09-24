@@ -14,8 +14,8 @@ class BloodyM extends React.Component {
           <a className='section1'>
             Bloody Mary
           </a>
-          <button>Toggle Color</button>
-          <div></div>
+          <div className='section2'>Coming Soon</div>
+
         </div>
 
         <div className='bloody-mobile'>
