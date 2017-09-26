@@ -1,3 +1,4 @@
+import 'jquery/src/jquery';
 import React, { PropTypes } from 'react'
 import alex from '../images/Team_Alex.png';
 import christian from '../images/Team_Christian.png';
@@ -5,32 +6,75 @@ import dawon from '../images/Team_Dawon.png';
 import triangle from '../images/triangle.png';
 import scroll from '../images/Contact/scrollup.png';
 import './team.css';
+import $ from 'jquery';
+window.jQuery = $;
+
 
 class team extends React.Component {
 
   constructor() {
     super();
-
     this.state = {
         intervalId: 0,
     };
   }
-
   scrollStep() {
     if (window.pageYOffset === 0) {
         clearInterval(this.state.intervalId);
     }
     window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
   }
-
   scrollToTop() {
     let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
     this.setState({ intervalId: intervalId });
   }
 
-  render () {
-    return(
+  // if ($('#back-to-top').length) {
+  //   var scrollTrigger = 100, // px
+  //       backToTop = function () {
+  //           var scrollTop = $(window).scrollTop();
+  //           if (scrollTop > scrollTrigger) {
+  //               $('#back-to-top').addClass('show');
+  //           } else {
+  //               $('#back-to-top').removeClass('show');
+  //           }
+  //       };
+  //   backToTop();
+  //   $(window).on('scroll', function () {
+  //       backToTop();
+  //   });
+  //   $('#back-to-top').on('click', function (e) {
+  //       e.preventDefault();
+  //       $('html,body').animate({
+  //         scrollTop: 0
+  //             }, 700);
+  //         });
+  //     }
 
+//       $(scrollToTop() {
+//    $('body').scrollTop(0);
+// });
+
+//   getInitialState() {
+//   return {scrollTop: 0 };
+// }
+// componentWillMount() {
+//   window.addEventListener('scroll', this.handleScroll);
+// }
+// componentWillUnmount() {
+//   window.removeEventListener('scroll', this.handleScroll);
+// }
+// handleScroll() {
+//    this.setState({scrollTop: $(window).scrollTop()});
+// }
+// scrollToTop() {
+//   $(window).animate({scrollTop: 0}, this.props.duration);
+// }
+//   if(this.state.scrollTop < this.props.offset) {
+//   return null;
+// }
+render() {
+    return(
       <div>
         <div className='team-container'>
 
@@ -190,7 +234,8 @@ class team extends React.Component {
           <div className='friendly-bar'></div>
 
           <div className='adventure-bar'>
-            <input type="image" id="myBtn" onClick={ () => { this.scrollToTop(); }} src={scroll}/>
+            <input type="image" id="myBtn" onClick={ () => {this.scrollToTop(); }} src={scroll}/>
+
 
           </div>
 

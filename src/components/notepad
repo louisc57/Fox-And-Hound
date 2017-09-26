@@ -10,3 +10,6 @@ To do's:
 
 <NavLink to='/projects/' onClick='return none' class="disabled" className='style disable-link' activeClassName='selected'>
 </NavLink>
+
+<input type="image" id="myBtn" onClick={ () => {this.scrollToTop(); }} src={scroll}/>
+<input href="#" id="back-to-top" title="Back to top"/>
