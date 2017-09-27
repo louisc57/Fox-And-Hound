@@ -9,6 +9,31 @@ import './team.css';
 import $ from 'jquery';
 window.jQuery = $;
 
+class ScrollButton extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+        intervalId: 0
+    };
+  }
+  scrollStep() {
+    if (window.pageYOffset === 0) {
+        clearInterval(this.state.intervalId);
+    }
+    window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+  }
+
+  scrollToTop() {
+    let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
+    this.setState({ intervalId: intervalId });
+  }
+
+  render () {
+      return <input type="image" src={scroll} alt="submit" id="myBtn" title='Back to top' className='scroll'
+               onClick={ () => { this.scrollToTop(); }} />;
+   }
+}
 
 class team extends React.Component {
 
@@ -234,9 +259,7 @@ render() {
           <div className='friendly-bar'></div>
 
           <div className='adventure-bar'>
-            <input type="image" id="myBtn" onClick={ () => {this.scrollToTop(); }} src={scroll}/>
-
-
+            <ScrollButton scrollStepInPx="50" delayInMs="17"/>
           </div>
 
         </div>

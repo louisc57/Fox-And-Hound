@@ -13,11 +13,33 @@ import logo from '../images/foxandhound.png';
 import pin from '../images/Contact/Contactpin.png';
 import scroll from '../images/Contact/scrollup.png';
 
+class ScrollButton extends React.Component {
+  constructor() {
+    super();
 
+    this.state = {
+        intervalId: 0
+    };
+  }
+  scrollStep() {
+    if (window.pageYOffset === 0) {
+        clearInterval(this.state.intervalId);
+    }
+    window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+  }
 
+  scrollToTop() {
+    let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
+    this.setState({ intervalId: intervalId });
+  }
+
+  render () {
+      return <input type="image" src={scroll} alt="submit" id="myBtn" title='Back to top' className='scroll'
+               onClick={ () => { this.scrollToTop(); }} />;
+   }
+}
 
 class Contact extends React.Component {
-
   render () {
     return(
       <div>
@@ -132,7 +154,7 @@ class Contact extends React.Component {
 
           <div className='friendly-bar'></div>
           <div className='adventure-bar'>
-            <input type="image" id="myBtn" onclick="topFunction()" src={scroll}/>
+            <ScrollButton scrollStepInPx="50" delayInMs="17"/>
           </div>
 
         </div>
