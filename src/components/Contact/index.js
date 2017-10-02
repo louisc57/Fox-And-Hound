@@ -12,6 +12,7 @@ import youtube from '../images/Contact/youtube.png';
 import logo from '../images/foxandhound.png';
 import pin from '../images/Contact/Contactpin.png';
 import scroll from '../images/Contact/scrollup.png';
+import test from '../images/foxandhound-logo.png';
 
 class ScrollButton extends React.Component {
   constructor() {
@@ -151,7 +152,7 @@ class Contact extends React.Component {
 
 
           </div>
-
+          
           <div className='friendly-bar'></div>
           <div className='adventure-bar'>
             <ScrollButton scrollStepInPx="50" delayInMs="17"/>
