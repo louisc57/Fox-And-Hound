@@ -107,7 +107,7 @@ img{
     font-family: 'Simple';
     max-width: 684px;
     padding-left: 20px;
-    font-size: 19px;
+    font-size: 20px;
     display: flex;
     align-items: center;
   }
@@ -161,7 +161,7 @@ img{
       width: 450px;
       height: auto;
       font-family: 'Simple';
-      font-size: 20px;
+      font-size: 21px;
       margin-right: 0
   }
 
@@ -184,7 +184,7 @@ img{
     width: 450px;
     height: auto;
     font-family: 'Simple';
-    font-size: 21px;
+    font-size: 22px;
     margin: 0 0 0 auto;
   }
 

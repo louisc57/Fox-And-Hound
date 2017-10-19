@@ -1,13 +1,14 @@
 import React, { PropTypes } from 'react';
 import { findDOMNode } from 'react-dom';
-import $ from 'jquery';
-import './bloody.css'
+import './bloody.css';
+import { ReactCSSTransitionGroup } from 'react-transition-group'; // ES6
+var $ = require('jquery');
 
 
 
 class BloodyM extends React.Component {
 
-  render () {
+  render(){
     return(
       <div>
         <div className='bloody-main'>
@@ -17,11 +18,13 @@ class BloodyM extends React.Component {
           <div className='section2'>Coming Soon</div>
 
         </div>
+        
 
         <div className='bloody-mobile'>
         </div>
       </div>
     )
+    document.getElementById('tId').style.width = "30%";
   }
 }
 

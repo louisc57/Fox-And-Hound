@@ -52,6 +52,11 @@ img{
   .selected{
     border-bottom: 1px solid black;
   }
+  .bloodyselected{
+    border-bottom: 1px solid red;
+    text-decoration-color: red;
+  }
+
   .projectstab{
     pointer-events: none;
   }

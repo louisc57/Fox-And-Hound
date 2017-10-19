@@ -8,7 +8,12 @@ import './header.css';
 
 
 class Header extends React.Component {
-
+  constructor(props) {
+    super(props);
+    this.state = {
+        color: 'red'
+    };
+  }
   getOverlayStyle() {
       return {
           display: 'none',
@@ -43,15 +48,13 @@ class Header extends React.Component {
           <div className='dropdown'>
             <div className='tabs'><NavLink to='/projects/' class="disabled" className='style projectstab' activeClassName='selected'>Projects</NavLink></div>
             <div className='dropdown-content'>
-              <div>
-                <a>
-                  <div className='dropdown-li'>
-                  </div>
-                  <NavLink to='/projects/bloodymary' exact={true} activeClassName='selected' className='dropdown-entry'>
-                    Bloody Mary
-                  </NavLink>
-                </a>
-              </div>
+              <a>
+                <p className='dropdown-li'>
+                </p>
+                <NavLink to='/projects/bloodymary' exact={true} activeClassName='bloodyselected' className='dropdown-entry'>
+                  Bloody Mary
+                </NavLink>
+              </a>
             </div>
           </div>
 

@@ -143,7 +143,7 @@ img{
     padding: 12px;
     resize: vertical;
   }
-submit {
+  #submit {
     width: 128px;
     height: 60px;
     z-index: 99; /* Make sure it does not overlap */
