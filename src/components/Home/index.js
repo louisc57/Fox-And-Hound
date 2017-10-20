@@ -35,7 +35,7 @@ class main extends React.Component {
           <div className='slogan1'>WE ARE <span className='orange'>FOX AND HOUND STUDIOS</span></div>
           <div className='slogan2'>CREATIVE CONTENT CREATORS</div>
           <div className='mbackground'>
-              
+
               <div className='bar8'></div>
               <div className='bar7'></div>
               <div className='bar6'></div>
