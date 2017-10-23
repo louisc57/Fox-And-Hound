@@ -1,46 +1,147 @@
-.bloody-main{
-  width: 100%;
-  height: auto;
-  min-height: 720px;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+@font-face {
+    font-family: 'Simple'; /*a name to be used later*/
+    src: url('../custom/Simplifica_Sans.ttf'); /*URL to font*/
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+@media all and (min-width: 416px){
+  .bloody-mobile{
+    display: none;
+  }
+  .bloody-main{
+    width: 100%;
+    height: 1700px;
+    min-height: 720px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo-class{
+    width: 400px;
+    height: 400px
+  }
+
+  .app{
+    font-size: 36px;
+    color: white;
+    margin-top: -60px
+  }
+  iframe{
+    width: 800px;
+    height: 520px;
+    margin-top: 25px;
+    border-style: none;
+    padding: 0px
+  }
+  .app-description{
+    width: 100%;
+    min-width: 800px;
+    max-width: 1500px;
+    height: 30%;
+    margin-top: 80px;
+    background-image: url('../images/graphic.png');
+    /*background-size: cover;*/
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .general{
+    color: white;
+    width: 500px;
+    border-top: red solid 1px;
+  }
+  .main-title{
+    color: red;
+    font-size: 48px
+  }
+  .main-app{
+    font-size: 24px;
+  }
+  p{
+    width: 560px;
+    font-size: 21px
+  }
 }
 
-.section1{
-  color: red;
-  font-size: 50px
-}
-.section2{
-  color: red;
-  font-size: 50px
-}
+@media all and (max-width: 415px){
+  .bloody-main{
+    display: none;
+  }
+  .bloody-mobile{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  iframe{
+    border-style: none;
+  }
+  .mobile-bloodylogo{
+    margin-top: -50px;
+  }
+  .mobile-app{
+    font-size: 36px;
+    color: #6D6E71;
+    margin-top: -90px
+  }
+  .mobile-graphic{
+    width: 100%;
+    height: 230px;
+    background-image: url('../images/graphic.png');
+    margin-top: 40px;
+    /*background-size: cover;*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: red;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    }
+  u{
+    margin-top: 150px;
+    border-bottom: red solid 1px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-bottom: 100px
+  }
+  .mobile-description{
+    color: #6D6E71;
+    width: 370px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .mobile-storelinks{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin-top: 40px;
+    /*margin-bottom: 75px;*/
+    justify-content: space-around;
+  }
+  .stores{
+    width: 150px;
+    height: 44px
+  }
+  .mobile-adventure{
+    color: red;
+    font-size: 24px;
+    display: flex;
+    margin-bottom: 30px;
+    text-align: right;
 
-.white{
-  color: white
+  }
+  x{
+    text-align: right;
+  }
+  .mobile-slides{
+    width: 380px;
+    margin-bottom: 50px
+  }
 }
-
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-}
-
-#tId {
-      width: 50%;
-      background-color: red
-   }
