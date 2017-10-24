@@ -171,12 +171,7 @@ img{
   .main{
     display: none
   }
-  .main-container{
-    display: none;
-  }
-  .mobile-main-container{
-    display: none;
-  }
+  
   .mobile-header{
     width: 100%;
     height: auto;
