@@ -63,7 +63,8 @@ img{
   }
   p{
     width: 560px;
-    font-size: 21px
+    font-size: 21px;
+    color: white
   }
 }
 
@@ -109,12 +110,13 @@ img{
     border-bottom: red solid 1px;
     text-decoration: none;
     margin-left: 20px;
-    margin-bottom: 100px
+    margin-bottom: 100px;
+    color: red
   }
   .mobile-description{
     color: #6D6E71;
     width: 370px;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
   }
   .mobile-storelinks{
@@ -131,14 +133,16 @@ img{
   }
   .mobile-adventure{
     color: red;
+    width: 100%;
     font-size: 24px;
     display: flex;
-    margin-bottom: 30px;
     text-align: right;
-
+    display: flex;
+    justify-content: flex-end;
   }
-  x{
+  h3{
     text-align: right;
+    margin-right: 18px;
   }
   .mobile-slides{
     width: 380px;

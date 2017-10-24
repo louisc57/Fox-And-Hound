@@ -54,7 +54,7 @@ class BloodyM extends React.Component {
               <div className="main-app">
                 AVAILABLE NOW IN APP STORES
               </div>
-              <p className="main-description">
+              <p className="main-description" >
                 From Fox & Hound Studios comes an immersive story experience that intertwines gorgeous artwork, riveting music, and a compelling storyline to keep you on the edge of your seat.<br/><br/>
 
                 Evoking the nostalgia of Pick-Your-Own-Adventure Interactive Fiction stories of the past, comes a modern twist, perfectly set in the medium of mobile phones.<br/><br/>
@@ -82,17 +82,25 @@ class BloodyM extends React.Component {
             Will you be able to escape the wrath of Bloody Mary and uncover clues that shine a light into the dark, dirty house? Or will you be forever trapped, to be added to the menagerie of the Hudson House?
           </div>
           <div className="mobile-storelinks">
-            <img className="stores" src={ios}></img>
-            <img className="stores" src={google}></img>
+            <a href="https://itunes.apple.com/us/app/bloody-mary-the-hudson-house/id1295129237?ls=1&mt=8">
+              <img className="stores" src={ios}></img>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.foxandhoundstudios.bloodymary">
+              <img className="stores" src={google}></img>
+            </a>
           </div>
-          <div className="mobile-adventure">CHOOSE YOUR OWN ADVENTURE</div>
+          <div className="mobile-adventure"><h3 align="right">CHOOSE YOUR OWN ADVENTURE</h3></div>
           <img className="mobile-slides" src={slide1}></img>
           <img className="mobile-slides" src={slide2}></img>
           <img className="mobile-slides" src={slide3}></img>
           <img className="mobile-slides" src={slide4}></img>
           <div className="mobile-storelinks">
-            <img className="stores" src={ios}></img>
-            <img className="stores" src={google}></img>
+            <a href="https://itunes.apple.com/us/app/bloody-mary-the-hudson-house/id1295129237?ls=1&mt=8">
+              <img className="stores" src={ios}></img>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.foxandhoundstudios.bloodymary">
+              <img className="stores" src={google}></img>
+            </a>
           </div>
           <div className='friendly-bar'></div>
           <div className='adventure-bar'>

@@ -65,27 +65,17 @@ class Contact extends React.Component {
               </div>
               <div className='sample'>foxandhoundstudios.cya@gmail.com</div>
               <div className='thoughts'>Let us<span className='orange2'> know your thoughts</span></div>
-              <input
-                type="text"
-                name="email"
-                id='email'
-                placeholder='Email'
-                />
-              <input
-                type="text"
-                name="subject"
-                id='subject'
-                placeholder='Subject'
-                />
-              <textarea
-                type="text"
-                name="message"
-                id='message'
-                placeholder='Message'
-                className="email-message"
-                />
-              <input type="image" id="submit" onclick="topFunction()" src={send}/>
+              <form action="https://formspree.io/foxandhoundstudios.cya@gmail.com" method="POST">
 
+                <input type="email" name="_replyto" id='email' className="email-email" placeholder='Email' />
+
+                <input type="subject" name="subject" id='subject' className="email-subject"placeholder='Subject' />
+
+                <textarea type="text" name="message" id='message' className="email-message"placeholder='Message' className="email-message" />
+
+                <input type="image" id="submit" value="Send" src={send}></input>
+
+              </form>
 
             </div>
           </div>
@@ -113,8 +103,8 @@ class Contact extends React.Component {
               <img className='icon' src={pintrest}/>
             </div>
 
-            <div className='mobile-logo'>
-              <img src={logo}/>
+            <div className='contact-mobile-logo'>
+              <img className='container' src={logo}/>
             </div>
 
             <div className='email'>
@@ -129,30 +119,21 @@ class Contact extends React.Component {
 
             <div className='thoughts'>Let us <span className='thoughts-orange'>know your thoughts</span></div>
 
-            <input
-              type="text"
-              name="email"
-              id='email'
-              placeholder='Email'
-              />
-            <input
-              type="text"
-              name="subject"
-              id='subject'
-              placeholder='Subject'
-              />
-            <textarea
-              type="text"
-              name="message"
-              id='message'
-              placeholder='Message'
-              className="email-message"
-              />
-            <input type="image" id="submit" onclick="topFunction()" src={send}/>
+              <form action="https://formspree.io/foxandhoundstudios.cya@gmail.com" method="POST">
+
+                <input type="email" name="_replyto" id='email' className="email-email" placeholder='Email' />
+
+                <input type="subject" name="subject" id='subject' className="email-subject"placeholder='Subject' />
+
+                <textarea type="text" name="message" id='message' className="email-message"placeholder='Message' className="email-message" />
+
+                <input type="image" id="submit" value="Send" src={send}></input>
+
+              </form>
 
 
           </div>
-          
+
           <div className='friendly-bar'></div>
           <div className='adventure-bar'>
             <ScrollButton scrollStepInPx="50" delayInMs="17"/>
