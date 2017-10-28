@@ -14,3 +14,13 @@ const App = () => (
 )
 
 export default App;
+
+// import Home from './Home';
+// import Contact from './Contact';
+// import TeamPage from './TeamPage';
+// import Mary from './components/BloodyMary';
+// <Router history={hashHistory}>
+//     <Route path="/" exact={true} component={Home}>
+//
+//     </Route>
+// </Router>
